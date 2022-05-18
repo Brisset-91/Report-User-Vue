@@ -1,5 +1,5 @@
 # proyect-tkambio
-
+<div> <img src="./reporte.gif"> </div>
 ## Project setup
 ```
 npm install
