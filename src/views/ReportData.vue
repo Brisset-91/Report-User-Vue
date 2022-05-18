@@ -56,7 +56,7 @@ export default {
     listData () {
       let listsUsers = []
       const newReport = JSON.parse(localStorage.getItem('newReport'))
-
+      console.log(newReport)
       const intialDateSplit = newReport.startDate.split('-')
       const intialDateA = new Date(intialDateSplit[0], intialDateSplit[1] - 1, intialDateSplit[2])
       const intialDate = new Date(intialDateA)
@@ -80,6 +80,7 @@ export default {
           return dateOfBirth >= intialDate && dateOfBirth <= finalDate ? element : null
         })
       }
+      console.log(newData())
       return newData()
     }
   },
