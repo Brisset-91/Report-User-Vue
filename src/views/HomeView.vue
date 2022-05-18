@@ -59,7 +59,6 @@ export default {
         startDate: this.newReportList.startDate,
         endingDate: this.newReportList.endingDate
       }
-      console.log(dataFilter)
       this.newReportList.description = ''
       this.newReportList.startDate = ''
       this.newReportList.endingDate = ''
@@ -112,7 +111,6 @@ form{
   width: 414px;
   height: 28px;
   justify-content: center;
-  /* TitleMobile */
   font-family: 'Argentum Sans';
   font-style: normal;
   font-weight: 800;
@@ -121,7 +119,6 @@ form{
   display: flex;
   align-items: center;
   text-align: center;
-  /* Grey-Complementary-4/900 */
   color: #181818;
   margin-bottom: 1rem;
 }
@@ -139,34 +136,23 @@ input{
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
-  /* identical to box height, or 100% */
   display: flex;
   align-items: center;
-  /* Grey-Complementary-4/700 */
   color: #565656;
 }
 .btnReport{
   border: none;
   cursor: pointer;
-  font-size: 1rem;
   margin-bottom: 1rem;
-  /* Auto layout */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 50px;
-  gap: 10px;
   width: 227px;
   height: 51px;
-  /* Yellow-PrimaryPalette/Primary-500 */
   background: #FFBE12;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  /* BTN-Big */
   font-family: 'Argentum Sans';
   font-style: normal;
   font-weight: 400;
@@ -202,17 +188,13 @@ input{
 .formData{
   display: flex;
   flex-direction: column;
-  /* ✏️ Label */
   height: 16px;
-  /* cap-form */
   font-family: 'Argentum Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
   letter-spacing: 0.2px;
-  /* Grey-Complementary-4/600 */
   color: #696969;
   margin-bottom: 4rem;
 }
@@ -222,59 +204,46 @@ input{
   width: 456px;
 }
 .textDescription{
-  /* ✏️ Label */
   width: 144px;
   height: 16px;
-  /* cap-form */
   font-family: 'Argentum Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
   letter-spacing: 0.2px;
-  /* Grey-Complementary-4/600 */
   color: #696969;
 }
 .formDescription{
   display: flex;
   flex-direction: column;
   width: 456px;
-  /* surface */
   box-sizing: border-box;
-  /*position: absolute;*/
   height: 54px;
   left: 0.5px;
   right: 0.5px;
   top: calc(50% - 54px/2 + 3.5px);
-  /* Outline */
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
 }
 .textDate{
-  /* ✏️ Label */
   width: 129px;
   height: 16px;
-  /* cap-form */
   font-family: 'Argentum Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
   letter-spacing: 0.2px;
-  /* Grey-Complementary-4/600 */
   color: #696969;
   margin-bottom: 15px;
 }
 .formInitial{
   display: flex;
   flex-direction: column;
-    /* surface */
   box-sizing: border-box;
   height: 54px;
   width: 221px;
-  /* Outline */
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
   margin-right: 16px;
@@ -282,15 +251,10 @@ input{
 .formEnd{
   display: flex;
   flex-direction: column;
-  /* surface */
   box-sizing: border-box;
   height: 54px;
   width: 221px;
-  /* Outline */
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
 }
-/* fade-enter{
-
-} */
 </style>

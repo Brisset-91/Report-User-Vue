@@ -1,4 +1,3 @@
-
 <template>
   <main>
     <nav>
@@ -78,15 +77,9 @@ export default {
           const dateOfBirthSplit = element.birth_date.split('/')
           const dateOfBirthA = new Date(dateOfBirthSplit[2], dateOfBirthSplit[1] - 1, dateOfBirthSplit[0])
           const dateOfBirth = new Date(dateOfBirthA)
-          console.log(dateOfBirth)
-          console.log(dateOfBirth >= intialDate)
-          console.log(dateOfBirth <= finalDate)
-          console.log('resul', dateOfBirth >= intialDate && dateOfBirth <= finalDate)
-
           return dateOfBirth >= intialDate && dateOfBirth <= finalDate ? element : null
         })
       }
-      // console.log(newData())
       return newData()
     }
   },
